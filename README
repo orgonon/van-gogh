@@ -13,7 +13,7 @@ Usage
 Van Gogh was developed to work alongside lighttpd, in which case it is capable of serving millions of users. 
 Van Gogh may also be ran as a standalone program, i.e.:
 
-	                $ ~/vangogh$ python vangogh.py
+	                $ ./vangogh.py
 
 Config
 ---------
