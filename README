@@ -1,0 +1,41 @@
+About
+------
+
+    Vangogh is a light-weight image host. 
+    
+    Features:
+    Hashlog; recently uploaded files are hashed to prevent duplicate uploads
+    API
+
+    http://localhost/vangogh.py/api?url=link&url=link&url...
+
+
+where 'link' is, of course, a url to an image. or via POST, i.e.
+
+    <form action='http://img.theswarm.me/vangogh.py/api'; method='post' enctype='multipart/form-data' name='theo'>
+    <input name='localdata' type=file multiple class='vincent' value='' />
+    <input name='api' type=hidden value='True' />
+    <input type='submit' class='submitbtn1' />
+    </form>
+
+
+either method will return a json array. 
+
+    Handles multiple uploads at once.
+
+
+Usage: 
+-------
+Vangogh was developed to work alongside lighttpd, in which case it is capable of serving millions of users. 
+Vangogh may also be run as a standalone program, i.e.:
+
+	                $ ~/vangogh$ python vangogh.py
+
+Config
+---------
+Change the url inside vangogh.py
+
+
+Credit
+---------
+http://www.orgonon.com/
