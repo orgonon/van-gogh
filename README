@@ -1,39 +1,23 @@
 About
 ------
-
-    Vangogh is a light-weight image host. 
+    Van Gogh is a light-weight image host. 
     
-    Features:
+ +Features:
     Hashlog; recently uploaded files are hashed to prevent duplicate uploads
-    API
-
-    http://localhost/vangogh.py/api?url=link&url=link&url...
-
-
-where 'link' is, of course, a url to an image. or via POST, i.e.
-
-    <form action='http://img.theswarm.me/vangogh.py/api'; method='post' enctype='multipart/form-data' name='theo'>
-    <input name='localdata' type=file multiple class='vincent' value='' />
-    <input name='api' type=hidden value='True' />
-    <input type='submit' class='submitbtn1' />
-    </form>
-
-
-either method will return a json array. 
-
+    API: http://localhost/vangogh.py/api?url=link&url=link&url...
+         will return a JSON array 
     Handles multiple uploads at once.
 
-
-Usage: 
+Usage 
 -------
-Vangogh was developed to work alongside lighttpd, in which case it is capable of serving millions of users. 
-Vangogh may also be run as a standalone program, i.e.:
+Van Gogh was developed to work alongside lighttpd, in which case it is capable of serving millions of users. 
+Van Gogh may also be ran as a standalone program, i.e.:
 
 	                $ ~/vangogh$ python vangogh.py
 
 Config
 ---------
-Change the url inside vangogh.py
+Change the url inside van-gogh.py
 
 
 Credit
